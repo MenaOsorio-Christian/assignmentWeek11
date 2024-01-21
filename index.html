@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tic-Tac-Toe</title>
+  <link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap.css"/>
+
+</head>
+<body>
+    <div class="container-fluid p-5 bg-primary text-white text-center">
+        <h1>Tic-Tac-Toe Game</h1>
+      </div>
+    <div class="container mt-3">
+        <h1 id="turn">X's Turn</h1>
+        <div id="board" class="row">
+          <!-- Create the Tic-Tac-Toe grid cells using Bootstrap buttons -->
+          <button class="col-4 btn btn-outline-primary btn-lg cell" onclick="makeMove(this)"></button>
+          <button class="col-4 btn btn-outline-primary btn-lg cell" onclick="makeMove(this)"></button>
+          <button class="col-4 btn btn-outline-primary btn-lg cell" onclick="makeMove(this)"></button>
+          <button class="col-4 btn btn-outline-primary btn-lg cell" onclick="makeMove(this)"></button>
+          <button class="col-4 btn btn-outline-primary btn-lg cell" onclick="makeMove(this)"></button>
+          <button class="col-4 btn btn-outline-primary btn-lg cell" onclick="makeMove(this)"></button>
+          <button class="col-4 btn btn-outline-primary btn-lg cell" onclick="makeMove(this)"></button>
+          <button class="col-4 btn btn-outline-primary btn-lg cell" onclick="makeMove(this)"></button>
+          <button class="col-4 btn btn-outline-primary btn-lg cell" onclick="makeMove(this)"></button>
+        </div>
+        <button class="btn btn-primary mt-3" onclick="restartGame()">Restart Game</button>
+      </div>
+
+
+<script src="./script.js"></script>
+<script src="./node_modules/jquery/dist/jquery.js"></script>
+<script src="./node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+
+<div class="container my-5">
+    <footer class="text-center text-lg-start text-white" style="background-color: #3e4551;">
+        <div class="text-center p-3">
+        <p>Assigment Week 1 Created by Christian Mena January 20th, 2024</p>
+    </div>
+    </footer>
+</div>
+
+</body>
+</html>
